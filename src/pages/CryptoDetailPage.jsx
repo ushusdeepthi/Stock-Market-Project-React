@@ -18,7 +18,12 @@ console.log(props)
             <p>Detaljsida</p>
             {cryptoData &&
             <>
-             <li>{cryptoData.name}</li> <li>{cryptoData.price}</li>
+            <li>Namn: {cryptoData.name}</li> 
+             <li>Price :{cryptoData.price}</li>
+             <li>Market :{cryptoData.market}</li>
+             <li>Today :{cryptoData.today}</li>
+             <li>source :{cryptoData.source}</li>
+         
              </>}
         </div>
     )

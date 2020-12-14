@@ -17,8 +17,17 @@ export default function CurrenciesDetailPage(props) {
             <p>Detaljsida Currency </p>
             {currencyData && 
             <>
-                <li>{currencyData.name}</li>
-                <li>{currencyData.price}</li>
+            <li>Namn: {currencyData.name}</li> 
+             <li>Price :{currencyData.price}</li>
+             <li>Market :{currencyData.market}</li>
+             <li>mtd :{currencyData.mtd}</li>
+             <li>Today :{currencyData.today}</li>
+             <li>source :{currencyData.source}</li>
+             <li>w1 :{currencyData.w1}</li>
+             <li>y3 :{currencyData.y3}</li>
+             <li>y5 :{currencyData.y5}</li>
+             <li>ytd :{currencyData.ytd}</li>
+
             </> }
         </div>
     )

@@ -21,7 +21,7 @@ export default function CurrenciesPage() {
                 const value = item[1]
                 console.log(item[1])
                 console.log(value.name)
-                return <CurrenciesItem value={value} key = {key} />
+                return <CurrenciesItem value={value} key={key} />
                 
             })}
             

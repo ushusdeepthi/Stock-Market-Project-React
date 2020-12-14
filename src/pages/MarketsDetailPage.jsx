@@ -21,8 +21,6 @@ export default function MarketsDetailPage(props) {
                     {marketsData && Object.entries(marketsData).map(item => {
                         const key = item[0]
                         const value = item[1]
-                        console.log(item[1])
-                        console.log(value.name)
                         return <MarketDetailItem value={value} key={key} />
 
                     })}
