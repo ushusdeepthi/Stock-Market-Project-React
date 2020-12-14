@@ -1,9 +1,10 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
+export default function CryptoItem({value}) {
 
-export default function CryptoItem() {
     return (
-        <div>
-            
-        </div>
+    <Link to={`/crypto/${value.ticker}`}>
+       <p>Name:{value.name} Price:{value.price}</p>
+    </Link>
     )
 }
