@@ -4,9 +4,8 @@ export default function MarketDetailItem({value}) {
 
 
     return (
-        <div>
-            
-            <Link to={`${value.market}/${value.ticker}`} >{value.name} : Price {value.price}</Link>
-        </div>
+        <tr>
+             <td><Link to={`${value.market}/${value.ticker}`} >{value.name}</Link></td>  <td> {value.price}</td>
+        </tr>
     )
 }

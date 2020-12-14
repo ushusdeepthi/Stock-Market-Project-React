@@ -10,15 +10,18 @@ fetch("https://market-data-collector.firebaseio.com/market-collector/indexes/se.
 .then(data => setIndexList(data))
     },[])
     return(
-        <div>
-             
-            <h2>Cryptosidan</h2>
-            <p>Här listar vi alla cryptos och skriver ut cryptoItems</p>
+                    <>
+            <h2>Indexsidan</h2>
+
+     <h4>name</h4>
+        <table>
+            <thead><th>name</th> <th>price</th> </thead> 
             {indexList && Object.entries(indexList).map(item =>{
               const key = item[0]
             const value = item[1]
             return <IndexItem value={value} key={key}/>
             })}
-            </div>
+            </table>
+            </>
     )
 }

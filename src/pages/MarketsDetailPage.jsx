@@ -3,6 +3,7 @@ import MarketItem from '../components/MarketItem'
 import MarketDetailItem from '../components/MarketDetailItem'
 
 
+
 export default function MarketsDetailPage(props) {
     const [marketsData, setMarketsData] = useState(null)
     useEffect(() => {
@@ -14,17 +15,24 @@ export default function MarketsDetailPage(props) {
 
 
     return (
-        <div>
-            <h4>{props.match.params.id}</h4>
-         
-                <>
+        <>
+     
+     <h4>{props.match.params.id}</h4>
+        <table>
+            <thead><th>name</th> <th>price</th> </thead>
+           
+
+                  <tbody> 
+                     
                     {marketsData && Object.entries(marketsData).map(item => {
                         const key = item[0]
                         const value = item[1]
                         return <MarketDetailItem value={value} key={key} />
 
                     })}
-                </>
-        </div>
+                    </tbody>     
+        </table>
+        </>
+
     )
 }
