@@ -16,14 +16,19 @@ export default function IndexesPage() {
 
       <table>
         <thead>
-          <th>name</th> <th>price</th>{" "}
+          <tr>
+            <th>name</th>
+            <th>price</th>
+          </tr>
         </thead>
-        {indexList &&
-          Object.entries(indexList).map((item) => {
-            const key = item[0];
-            const value = item[1];
-            return <IndexItem value={value} key={key} />;
-          })}
+        <tbody>
+          {indexList &&
+            Object.entries(indexList).map((item) => {
+              const key = item[0];
+              const value = item[1];
+              return <IndexItem value={value} key={key} />;
+            })}
+        </tbody>
       </table>
     </>
   );

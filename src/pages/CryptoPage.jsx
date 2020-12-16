@@ -19,8 +19,10 @@ export default function CryptoPage() {
       <h2>Crypto</h2>
       <table>
         <thead>
-          <th>name</th>
-          <th>price</th>
+          <tr>
+            <th>name</th>
+            <th>price</th>
+          </tr>
         </thead>
         <tbody>
           {cryptoList &&
