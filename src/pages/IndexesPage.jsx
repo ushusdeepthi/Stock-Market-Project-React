@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import IndexItem from "../components/IndexItem";
+import { TableStyled } from "../styles/Styles";
 
 export default function IndexesPage() {
   const [indexList, setIndexList] = useState(null);
@@ -12,13 +13,13 @@ export default function IndexesPage() {
   }, []);
   return (
     <>
-      <h2>Indexes</h2>
-
+      <h2 className="text-center mt-5">Indexes</h2>
+      <TableStyled>
       <table>
         <thead>
           <tr>
-            <th>name</th>
-            <th>price</th>
+            <th>Name</th>
+            <th>Price</th>
           </tr>
         </thead>
         <tbody>
@@ -30,6 +31,7 @@ export default function IndexesPage() {
             })}
         </tbody>
       </table>
+      </TableStyled>
     </>
   );
 }

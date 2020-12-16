@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import CryptoItem from "../components/CryptoItem";
+import { TableStyled } from "../styles/Styles";
 
 export default function CryptoPage() {
   //Här Fetchar vi och använder useState och useEffect
@@ -16,12 +17,13 @@ export default function CryptoPage() {
 
   return (
     <div>
-      <h2>Crypto</h2>
+      <h2 className="text-center mt-5">Crypto</h2>
+      <TableStyled>
       <table>
         <thead>
           <tr>
-            <th>name</th>
-            <th>price</th>
+            <th>Name</th>
+            <th>Price</th>
           </tr>
         </thead>
         <tbody>
@@ -34,6 +36,7 @@ export default function CryptoPage() {
             })}
         </tbody>
       </table>
+      </TableStyled>
     </div>
   );
 }

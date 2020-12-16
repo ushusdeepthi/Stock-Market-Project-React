@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import MarketItem from "../components/MarketItem";
 import MarketDetailItem from "../components/MarketDetailItem";
+import { TableStyled } from "../styles/Styles";
 
 export default function MarketsDetailPage(props) {
   const [marketsData, setMarketsData] = useState(null);
@@ -15,7 +16,9 @@ export default function MarketsDetailPage(props) {
 
   return (
     <>
-      <h4>{props.match.params.id}</h4>
+    
+      <h4 className="text-center mt-5">{props.match.params.id}</h4>
+      <TableStyled>
       <table>
         <thead>
           <tr>
@@ -32,6 +35,7 @@ export default function MarketsDetailPage(props) {
             })}
         </tbody>
       </table>
+      </TableStyled>
     </>
   );
 }

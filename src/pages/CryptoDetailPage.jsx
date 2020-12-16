@@ -14,10 +14,10 @@ console.log(props)
 
     return (
 
-        <div>
-            <p>Detaljsida</p>
+        <div>   
             {cryptoData &&
             <>
+             <h3>{cryptoData.name}</h3>
             <li>Namn: {cryptoData.name}</li> 
              <li>Price :{cryptoData.price}</li>
              <li>Market :{cryptoData.market}</li>

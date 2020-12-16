@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import CurrenciesItem from "../components/CurrenciesItem";
+import { TableStyled } from "../styles/Styles";
 
 export default function CurrenciesPage() {
   const [currencyList, setCurrencyList] = useState(null);
@@ -29,11 +30,12 @@ export default function CurrenciesPage() {
 
   return (
     <div>
-      <h2>Currencies</h2>
+      <h2 className="text-center mt-5">Currencies</h2>
+      <TableStyled>
       <table>
         <thead>
           <tr>
-            <th>name</th>
+            <th>Name</th>
             <th onClick={handleSortClick}>price</th>
           </tr>
         </thead>
@@ -46,6 +48,7 @@ export default function CurrenciesPage() {
             })}
         </tbody>
       </table>
+      </TableStyled>
     </div>
   );
 }

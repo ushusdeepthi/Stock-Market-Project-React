@@ -13,22 +13,22 @@ export default function IndexesDetailPage(props) {
     
     return (
         <div>
-            <p>Detaljsida</p>
+           
             {indexData &&
             <>
+             <h3>{indexData.name}</h3>
              <li>Namn: {indexData.name}</li> 
-             <li>Price :{indexData.price}</li>
-             <li>Market :{indexData.market}</li>
-             <li>mtd :{indexData.mtd}</li>
-             <li>Today :{indexData.today}</li>
-             <li>source :{indexData.source}</li>
-             <li>w1 :{indexData.w1}</li>
-             <li>y3 :{indexData.y3}</li>
-             <li>y5 :{indexData.y5}</li>
-             <li>ytd :{indexData.ytd}</li>
-            
+             <li>Price : {indexData.price}</li>
+             <li>Market : {indexData.market}</li>
+             <li>mtd : {indexData.mtd}</li>
+             <li>Today : {indexData.today}</li>
+             <li>source : {indexData.source}</li>
+             <li>w1 : {indexData.w1}</li>
+             <li>y3 : {indexData.y3}</li>
+             <li>y5 : {indexData.y5}</li>
+             <li>ytd : {indexData.ytd}</li>
             <div>
-            <h1>Bar Chart</h1> 
+            <h4 className="mt-5">Progress</h4> 
             <BarChart width={indexData.w1} color="#da4453">w1: {indexData.w1}</BarChart>
             <BarChart width={indexData.y3} color="#37bc9b">y3: {indexData.y3}</BarChart>
             <BarChart width={indexData.y5} color="#f6bb42">y5: {indexData.y3}</BarChart>
