@@ -1,16 +1,13 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
-export default function CurrenciesItem({value}) {
-    
-    return (
-        <Link to={`/currencies/${value.ticker}`}>
-            <p>Name:{value.name} Price:{value.price}</p>
-        </Link>
-
-    )
+export default function CurrenciesItem({ value }) {
+  return (
+    <tr>
+      <td>
+        <Link to={`/currencies/${value.ticker}`}>{value.name}</Link>
+      </td>
+      <td>{value.price} SEK</td>
+    </tr>
+  );
 }
-
-
-
-
