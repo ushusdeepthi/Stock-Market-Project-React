@@ -1,4 +1,5 @@
 import React , {useState,useEffect} from 'react'
+import { BarChart } from '../styles/Styles'
 
 export default function IndexesDetailPage(props) {
     const [indexData, setIndexData] = useState(null)
@@ -25,6 +26,14 @@ export default function IndexesDetailPage(props) {
              <li>y3 :{indexData.y3}</li>
              <li>y5 :{indexData.y5}</li>
              <li>ytd :{indexData.ytd}</li>
+            
+            <div>
+            <h1>Bar Chart</h1> 
+            <BarChart width={indexData.w1} color="#da4453">w1: {indexData.w1}</BarChart>
+            <BarChart width={indexData.y3} color="#37bc9b">y3: {indexData.y3}</BarChart>
+            <BarChart width={indexData.y5} color="#f6bb42">y5: {indexData.y3}</BarChart>
+            <BarChart width={indexData.ytd} color="#967adc">ytd: {indexData.ytd}</BarChart>    
+            </div> 
              </>}
         </div>
     )
