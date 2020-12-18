@@ -31,7 +31,7 @@ export default function IndexesDetailPage(props) {
             <h4 className="mt-5">Progress</h4> 
             <BarChart width={indexData.w1} color="#da4453">w1: {indexData.w1}</BarChart>
             <BarChart width={indexData.y3} color="#37bc9b">y3: {indexData.y3}</BarChart>
-            <BarChart width={indexData.y5} color="#f6bb42">y5: {indexData.y3}</BarChart>
+            <BarChart width={indexData.y5} color="#f6bb42">y5: {indexData.y5}</BarChart>
             <BarChart width={indexData.ytd} color="#967adc">ytd: {indexData.ytd}</BarChart>    
             </div> 
              </>}

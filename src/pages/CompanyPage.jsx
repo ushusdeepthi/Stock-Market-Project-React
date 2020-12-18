@@ -37,7 +37,7 @@ console.log(companyItem)
            <h4 className="mt-5">Progress</h4> 
             <BarChart width={companyItem.w1} color="#da4453">w1: {companyItem.w1}</BarChart>
             <BarChart width={companyItem.y3} color="#37bc9b">y3: {companyItem.y3}</BarChart>
-            <BarChart width={companyItem.y5} color="#f6bb42">y5: {companyItem.y3}</BarChart>
+            <BarChart width={companyItem.y5} color="#f6bb42">y5: {companyItem.y5}</BarChart>
             <BarChart width={companyItem.ytd} color="#967adc">ytd: {companyItem.ytd}</BarChart>    
             </div> 
              

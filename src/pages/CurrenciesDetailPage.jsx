@@ -34,7 +34,7 @@ export default function CurrenciesDetailPage(props) {
             <h4 className="mt-5">Progress</h4> 
             <BarChart width={currencyData.w1} color="#da4453">w1: {currencyData.w1}</BarChart>
             <BarChart width={currencyData.y3} color="#37bc9b">y3: {currencyData.y3}</BarChart>
-            <BarChart width={currencyData.y5} color="#f6bb42">y5: {currencyData.y3}</BarChart>
+            <BarChart width={currencyData.y5} color="#f6bb42">y5: {currencyData.y5}</BarChart>
             <BarChart width={currencyData.ytd} color="#967adc">ytd: {currencyData.ytd}</BarChart>    
             </div> 
             </> }
